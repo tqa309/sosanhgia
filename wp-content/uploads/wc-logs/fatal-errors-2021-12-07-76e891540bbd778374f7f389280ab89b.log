@@ -1,0 +1,33 @@
+2021-12-07T11:11:46+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\File.php:42
+Stack trace:
+#0 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\File.php(79): Loco_fs_File::abs('C:/wamp64/www/s...')
+#1 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\File.php(68): Loco_fs_File->setPath('C:/wamp64/www/s...')
+#2 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(379): Loco_fs_File->__construct('C:/wamp64/www/s...')
+#3 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(397): Loco_fs_FileFinder->read()
+#4 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(397): Loco_fs_FileFinder->read()
+#5 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(397): Loco_fs_FileFinder->read()
+#6 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(397): Loco_fs_FileFinder->read()
+#7 C:\w in C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\File.php on line 42
+
+2021-12-07T11:11:59+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\File.php:42
+Stack trace:
+#0 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\File.php(79): Loco_fs_File::abs('C:/wamp64/www/s...')
+#1 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\File.php(68): Loco_fs_File->setPath('C:/wamp64/www/s...')
+#2 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(379): Loco_fs_File->__construct('C:/wamp64/www/s...')
+#3 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(397): Loco_fs_FileFinder->read()
+#4 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(397): Loco_fs_FileFinder->read()
+#5 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(397): Loco_fs_FileFinder->read()
+#6 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(397): Loco_fs_FileFinder->read()
+#7 C:\w in C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\File.php on line 42
+
+2021-12-07T13:48:24+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\File.php:42
+Stack trace:
+#0 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\File.php(79): Loco_fs_File::abs('C:/wamp64/www/s...')
+#1 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\File.php(68): Loco_fs_File->setPath('C:/wamp64/www/s...')
+#2 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(379): Loco_fs_File->__construct('C:/wamp64/www/s...')
+#3 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(397): Loco_fs_FileFinder->read()
+#4 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(397): Loco_fs_FileFinder->read()
+#5 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(397): Loco_fs_FileFinder->read()
+#6 C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\FileFinder.php(397): Loco_fs_FileFinder->read()
+#7 C:\w in C:\wamp64\www\sosanhgia\wp-content\plugins\loco-translate\src\fs\File.php on line 42
+

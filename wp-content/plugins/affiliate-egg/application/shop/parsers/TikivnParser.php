@@ -50,7 +50,15 @@ class TikivnParser extends ShopParser {
 
     public function parsePrice()
     {
-        return $this->xpathScalar(".//*[@itemprop='price']/@content");
+        if (preg_match('/,"price":(\d+),"/', $this->dom->saveHTML(), $matches))
+            return $matches[1];
+
+        $paths = array(
+            ".//div[@class='summary']//p[@class='original-price']",
+        );
+
+        if ($price = $this->xpathScalar($paths))
+            return $price;
     }
 
     public function parseOldPrice()
@@ -91,8 +99,8 @@ class TikivnParser extends ShopParser {
 
         $extra['images'] = $this->xpathArray(".//*[@id='product-images']//a/@data-image");
 
-        $names = $this->xpathArray(".//div[contains(@class, 'ProductDescription__Wrapper')]//table//tr/td[1]");
-        $values = $this->xpathArray(".//div[contains(@class, 'ProductDescription__Wrapper')]//table//tr/td[2]");
+        $names = $this->xpathArray(".//div[contains(@class, 'content')]//table//tr/td[1]");
+        $values = $this->xpathArray(".//div[contains(@class, 'content')]//table//tr/td[2]");
         $feature = array();
         for ($i = 0; $i < count($names); $i++)
         {

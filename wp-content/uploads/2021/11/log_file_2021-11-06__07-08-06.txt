@@ -1,0 +1,112 @@
+
+---Downloaded files---
+The import files for: ReCompare were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/sosanhgia
+Data file = C:\wamp64\www\sosanhgia/wp-content/uploads/2021/11/demo-content-import-file_2021-11-06__07-08-06.xml
+Widget file = C:\wamp64\www\sosanhgia/wp-content/uploads/2021/11/demo-widgets-import-file_2021-11-06__07-08-06.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+---ocdi/before_content_import---
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Post Sidebar Area : 
+
+ReHub: Top Offers/Products - Most popular this month - Imported
+ReHub: Related Reviews - Related reviews - Imported
+
+Footer 1 : 
+
+Text - About Us - Imported
+ReHub: Social icons - No Title - Imported
+
+Footer 2 : 
+
+Text - No Title - Imported
+
+Footer 3 : 
+
+Text - Sign Up for Weekly Newsletter - Imported
+Custom HTML - No Title - Imported
+
+Woocommerce shop sidebar : 
+
+Filter Products by Price - Filter by price - Imported
+Filter Products by Attribute - Camera - Imported
+Filter Products by Attribute - Flight Time - Imported
+Filter Products by Attribute - Brand - Imported
+Filter Products by Rating - Average rating - Imported
+
+Woocommerce product sidebar : 
+
+ReHub: Latest Woo Comparisons - Latest Comparisons - Imported
+ReHub: Top Offers/Products - Top offers - Imported
+
+
+
+---ocdi/after_import---
+Theme Options was updated-------Customizer was updated-------Menu was assigned-------Menu hierarchy was fixed-------Menu hierarchy was fixed-------Menu hierarchy was fixed-------HomePage was assigned-------Blog page was assigned-------

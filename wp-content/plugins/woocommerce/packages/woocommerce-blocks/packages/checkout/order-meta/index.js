@@ -1,55 +1,36 @@
 /**
  * External dependencies
  */
-import { createSlotFill } from 'wordpress-components';
-import { Children, cloneElement } from '@wordpress/element';
 import classnames from 'classnames';
-import { CURRENT_USER_IS_ADMIN } from '@woocommerce/block-settings';
-import { useStoreCart } from '@woocommerce/base-hooks';
 
 /**
  * Internal dependencies
  */
-import BlockErrorBoundary from '../error-boundary';
+import { createSlotFill, hasValidFills, useSlot } from '../slot';
+import TotalsWrapper from '../wrapper';
 
 const slotName = '__experimentalOrderMeta';
-const { Fill, Slot: OrderMetaSlot } = createSlotFill( slotName );
 
-function ExperimentalOrderMeta( { children } ) {
-	return (
-		<Fill>
-			{ ( fillProps ) => {
-				return Children.map( children, ( fill ) => {
-					return (
-						<BlockErrorBoundary
-							renderError={
-								CURRENT_USER_IS_ADMIN ? null : () => null
-							}
-						>
-							{ cloneElement( fill, fillProps ) }
-						</BlockErrorBoundary>
-					);
-				} );
-			} }
-		</Fill>
-	);
-}
+const { Fill: ExperimentalOrderMeta, Slot: OrderMetaSlot } = createSlotFill(
+	slotName
+);
 
-function Slot( { className } ) {
-	// We need to pluck out receiveCart.
-	// eslint-disable-next-line no-unused-vars
-	const { extensions, receiveCart, ...cart } = useStoreCart();
+const Slot = ( { className, extensions, cart } ) => {
+	const { fills } = useSlot( slotName );
 	return (
-		<OrderMetaSlot
-			bubblesVirtually
-			className={ classnames(
-				className,
-				'wc-block-components-order-meta'
-			) }
-			fillProps={ { extensions, cart } }
-		/>
+		hasValidFills( fills ) && (
+			<TotalsWrapper slotWrapper={ true }>
+				<OrderMetaSlot
+					className={ classnames(
+						className,
+						'wc-block-components-order-meta'
+					) }
+					fillProps={ { extensions, cart } }
+				/>
+			</TotalsWrapper>
+		)
 	);
-}
+};
 
 ExperimentalOrderMeta.Slot = Slot;
 
